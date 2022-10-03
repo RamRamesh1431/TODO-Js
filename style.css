@@ -1,0 +1,218 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  color: white;
+  background-color: black;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* header css */
+
+header {
+  width: 80%;
+  height: auto;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header strong {
+  font-weight: 900;
+}
+header p:first-child {
+  font-size: 40px;
+  font-weight: lighter;
+}
+header p:nth-child(2) {
+  font-size: 30px;
+}
+header a {
+  font-size: 33px;
+  margin-right: 5px;
+}
+header div {
+  display: flex;
+}
+
+/* Paragraph css */
+
+.no {
+  width: 80%;
+}
+#no {
+  text-align: left;
+  font-size: 25px;
+}
+
+/* Popup css */
+
+.popuplist {
+  position: fixed;
+  top: 30%;
+  left: 35%;
+  background-color: aliceblue;
+  color: rgb(187, 14, 14);
+  font-size: 25px;
+  width: 30%;
+  height: 30%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  z-index: 1;
+}
+button {
+  background-color: rgb(187, 14, 14);
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 25px;
+  border: none;
+  width: 90px;
+  height: 40px;
+}
+input {
+  height: 30px;
+  width: 60%;
+  margin: 8px;
+  border-radius: 5px;
+}
+.active {
+  filter: blur(5px);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* scetion */
+
+section {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.listdiv {
+  border-radius: 10px;
+  margin: 5px;
+  width: 23%;
+  height: 300px;
+  background-color: aliceblue;
+  color: rgb(180, 49, 49);
+  padding: 15px 0;
+  font-size: 18px;
+  font-family: sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.listdiv .heading {
+  display: block;
+  border-bottom: 1px solid rgb(126, 112, 112);
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 23px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.listdiv .plus {
+  position: absolute;
+  cursor: pointer;
+  font-size: 25px;
+  bottom: 5px;
+  right: 5px;
+}
+.listdiv .delete {
+  position: absolute;
+  cursor: pointer;
+  font-size: 25px;
+  bottom: 5px;
+  right: 40px;
+}
+
+/* popup2 */
+.popuplist2 {
+  position: fixed;
+  top: 30%;
+  left: 35%;
+  background-color: aliceblue;
+  color: rgb(187, 14, 14);
+  font-size: 25px;
+  width: 30%;
+  height: 30%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  visibility: hidden;
+  z-index: 1;
+}
+
+/* todo list */
+.todolistContainer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+/* .todolist {
+  align-content: center;
+} */
+.todolist p {
+  font-size: 20px;
+  color: black;
+}
+.todolist button {
+  background-color: rgb(70, 70, 224);
+  font-size: 14px;
+  width: 80px;
+  height: 20px;
+}
+
+/* container2 */
+
+.container2 {
+  width: 80%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.container2 header {
+  width: 100%;
+  margin-top: 60px;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  font-size: 35px;
+}
+.container2 section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container2 .box2 {
+  font-weight: 900;
+  font-size: 35px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://use.fontawesome.com/205ca91217.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <title>TODO App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <p><strong>Tasks</strong> List</p>
+        <div>
+          <a href="#" onclick="popup()"
+            ><i class="fa fa-plus-circle" aria-hidden="true"></i
+          ></a>
+          <p>Add Item</p>
+        </div>
+      </header>
+      <div class="no"><p id="no">No Items in the TODO list</p></div>
+      <section></section>
+    </div>
+    <div class="popuplist">
+      <p>Add New List</p>
+      <input name="text" type="text" class="input1" />
+      <div>
+        <button class="add" onclick="add()">Add</button>
+        <button class="close" onclick="cl()">Close</button>
+      </div>
+    </div>
+    <div class="popuplist2">
+      <p>Add New item</p>
+      <input name="text" type="text" class="input2" />
+      <div>
+        <button class="add" onclick="listadd(this)">Add</button>
+        <button class="close" onclick="cl()">Close</button>
+      </div>
+    </div>
+    <div class="container2">
+      <header>
+        <div class="box1">
+          <a href="#" onclick="content(this)"
+            ><i class="fa-solid fa-circle-arrow-left" aria-hidden="true"></i
+          ></a>
+          <span>Back</span>
+        </div>
+        <div class="box2">Trip...</div>
+        <div class="box3">
+          <a href="#" onclick="popup(this)"
+            ><i class="fa fa-plus-circle" aria-hidden="true"></i
+          ></a>
+        </div>
+      </header>
+      <section class="con2section"></section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
